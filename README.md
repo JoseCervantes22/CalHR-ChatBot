@@ -14,6 +14,9 @@ Benie the Bot is a chatbot designed to assist employees with benefits-related in
 Introduction
 Benie the Bot is a virtual assistant built to streamline and simplify the process of accessing and understanding employee benefits information within the CalHR organization. It leverages multiple technologies to provide quick and accurate responses to common benefits-related questions and guide employees through various benefit-related processes.
 
+Architecture
+![Architecture](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/beb83862-8278-450f-8fba-c5e1cbac3ac6)
+
 Components
 Power Apps Package: This package includes a Power Virtual Agents (PVA) chatbot and a Power Automate API that connects to Azure OpenAI. It allows Benie to interact with users and retrieve responses from the ChatGPT model.
 
