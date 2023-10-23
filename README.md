@@ -24,8 +24,11 @@ OpenAI ChatGPT Deployment Configuration: This repository includes the configurat
 
 Cognitive Search: Instructions and resources are provided to set up Cognitive Search, allowing you to index and search the PDF documents provided by CalHR. This feature enhances the bot's ability to retrieve relevant benefits information.
 
-Features
-PDF Document Integration: Benie v0.3 utilizes the PDF documents provided by CalHR as the primary source of information, making it a comprehensive resource for benefits-related inquiries.
+## Features
+- Constituent Identification for delivery of personalized information.
+- Generation of Constituent analysis to understand user preferences.
+- Feedback evaluation with numerical ratings for user satisfaction.
+- Guided conversation to help users efficiently.
 
 Powerful Search Capability: With Cognitive Search integration, users can search and access specific information from PDF documents quickly.
 
