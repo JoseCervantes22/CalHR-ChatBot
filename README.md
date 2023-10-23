@@ -27,6 +27,8 @@ Components
 - Feedback evaluation with numerical ratings for user satisfaction.
 - Guided conversation to help users efficiently.
 
+![new_bytelogo](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/816ef2ff-ef3e-4d32-84ec-18039c315567)
+
 Powerful Search Capability: With Cognitive Search integration, users can search and access specific information from PDF documents quickly.
 
 Chat-Based Interaction: Benie provides a conversational interface for users to ask questions and receive benefits-related information in a natural and user-friendly manner.
