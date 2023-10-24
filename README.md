@@ -122,4 +122,5 @@ When you are prepared to generate the index, utilize a search client capable of 
 6. In the next step, select all networks, including the internet, can access this resource.
 7. Finally, review and submit.
 
-### Config Power Automate
+### Power Automate Package
+The "Power Automate API connecting to Azure OpenAI" workflow provides an integration between Power Automate and Azure OpenAI, allowing Benie to interact with users and retrieve responses from the ChatGPT model. This integration has been designed to facilitate more efficient and effective communication with users, providing accurate and contextually relevant responses to queries and requests received.
