@@ -2,11 +2,11 @@
 
 Benie the Bot is a chatbot designed to assist employees with benefits-related inquiries at CalHR (California Department of Human Resources). This repository contains various components of the Benie the Bot system, including a Power Apps package, OpenAI ChatGPT deployment configuration, and instructions for setting up Cognitive Search.
 
-- Table of Contents
+- Architecture
 - Introduction
 - Components
 - Features
-- Installation
+- Deployment
 - Documentation
 - Contributing
 - License
@@ -30,8 +30,7 @@ Components:
 ![new_bytelogo](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/816ef2ff-ef3e-4d32-84ec-18039c315567)
 
 ## Deployment
-### Config Azure Open AI - Cognitive search Services
-#### Creating a Blob Storage Account: 
+### Creating a Blob Storage Account: 
 1. Navigate to the Azure home page (https://portal.azure.com).
 2. In the navigation panel on the left, select "All Services."
 3. In the list of services, type "Storage Account".
@@ -46,7 +45,7 @@ Components:
 
 ![PROYECTO (1)](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/3ba16ab5-bfdb-4c27-9068-69fa1921f218)
 
-#### Creating a resource in Azure Cognitive Search Service: 
+### Creating a resource in Azure Cognitive Search Service: 
 Prerequisite: 
 - An azure Subscription
 - You should have a comprehension of the data you intend to index. The process of creating an index involves defining a schema, so it's crucial to have a clear idea of which source fields you want to make retrievable and searchable.
@@ -73,15 +72,54 @@ When you are prepared to generate the index, utilize a search client capable of 
 1. Navigate to the your Storage Account in Azure Portal and select.
 2. Select upload:
 
-<img src="https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/fe943856-aa07-46e5-85b9-4125af2e0e14" alt="PROYECTO (5)"  width="350" height="80">
+<img src="https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/fe943856-aa07-46e5-85b9-4125af2e0e14" alt=""  width="350" height="80">
 
 3. Select your file CSV Utf and container:
 
-<img src="https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/4e7ea01f-a370-428b-8251-0a61e6616220" alt="PROYECTO (6)" style="width:400px;height:350px;">
+<img src="https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/4e7ea01f-a370-428b-8251-0a61e6616220" alt="" style="width:400px;height:350px;">
 
 
-. Select import data:
+4. Select import data:
 
-   <img src="https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/5ab8ed3e-1fca-4da6-956d-816171aca3ca" alt="PROYECTO (4)-min" width="380" height="100">
+   <img src="https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/5ab8ed3e-1fca-4da6-956d-816171aca3ca" alt="" width="380" height="100">
 
-5. 
+5. In the datasource field, select Blob Storage.
+6. Fill in the details in the form:
+   - Datasource name: Enter a unique name for your resource.
+   - Data to extract: Select content and metadata.
+   - Parsing mode: Select Delimited text.
+   - First Line Contains Header: We select the checkbox.
+   - Delimiter Character: We select that our limiter will be ",".
+   - Connection string: We choose an existing connection, that is, our blob storage and then we select our container.
+   - Managed identity authentication: We choose none for managed identity authentication.
+7. In the next step, in the section called "skill set name", we enter the name of the data source field (source data field). As for "enrichment granularity", we will leave the default settings without making any additional changes.
+
+   ![Screenshot 2023-10-24 095314](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/38538b2d-0541-482e-9d36-2a2a4b40209d)
+
+8. In the next section (Customize Target Index), we provide the name for the index, select the key as 'id', and leave the search mode unchanged.
+
+   ![Screenshot 2023-10-24 100302](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/1f8524c9-39a4-44e2-833c-8b7e2bf5312b)
+
+9. At the end of the same section, we will make these changes:
+
+   ![Screenshot 2023-10-24 101105](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/f54b3562-9584-4d13-a25d-8e3eaf4fde4e)
+
+10. Finally, we create the indexer.
+
+   ![Screenshot 2023-10-24 101502](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/ff2568c0-2101-4510-beed-e86146dffa87)
+
+### Config Azure Open AI 
+1. Navigate to the Azure home page (https://portal.azure.com).
+2. In the navigation panel on the left, select "All Services."
+3. In the list of services, type "Azure Open AI" in the search bar and select it.
+4. We select create.
+5. Fill in the details in the form:
+   - Subscription: Enter your subscription name.
+   - Resource group: Select your resource group.
+   - Location: Choose the geographic region where you want to host the resource.
+   - Name: Enter a unique name for your Azure Open AI.
+   - Pricing tier: We select Standerd S0.
+6. In the next step, we select all networks, including the internet, can access this resource.
+7. Finally, review and submit.
+
+### Config Power Automate
