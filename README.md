@@ -74,7 +74,7 @@ When you are prepared to generate the index, utilize a search client capable of 
 
 <img src="https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/fe943856-aa07-46e5-85b9-4125af2e0e14" alt=""  width="350" height="80">
 
-3. Select your file CSV Utf and container:
+3. Select the file CSV UTF-8 and create three containers for each file CSV: 
 
 <img src="https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/4e7ea01f-a370-428b-8251-0a61e6616220" alt="" style="width:400px;height:350px;">
 
