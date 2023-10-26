@@ -3,13 +3,9 @@
 Benie the Bot is a chatbot designed to assist employees with benefits-related inquiries at CalHR (California Department of Human Resources). This repository contains various components of the Benie the Bot system, including a Power Apps package, OpenAI ChatGPT deployment configuration, and instructions for setting up Cognitive Search.
 
 - Architecture
-- Introduction
 - Components
 - Features
 - Deployment
-- Documentation
-- Contributing
-- License
 
 ### Architecture
 ![Architecture](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/beb83862-8278-450f-8fba-c5e1cbac3ac6)
