@@ -94,11 +94,13 @@ When you are prepared to generate the index, utilize a search client capable of 
    - Managed identity authentication: Choose none for managed identity authentication.
 7. In the next step, in the section called "skill set name", enter the name of the data source field (source data field). As for "enrichment granularity", leave the default settings without making any additional changes.
 
-   ![Screenshot 2023-10-24 095314](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/38538b2d-0541-482e-9d36-2a2a4b40209d)
+   ![image](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/e323e90a-c923-472a-8dbc-5fc2e50df2ff)
 
-8. In the next section (Customize Target Index), provide the name for the index, select the key as 'id', and leave the search mode unchanged.
 
-   ![Screenshot 2023-10-24 100302](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/1f8524c9-39a4-44e2-833c-8b7e2bf5312b)
+8. In the next section (Customize Target Index), provide the name for the index, select the key as ‘azuresearch_document key’, and leave the search mode unchanged
+
+   ![image](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/a89bff5e-4d94-4693-b3b6-97dab97174a8)
+
 
 9. At the end of the same section, make these changes:
 
