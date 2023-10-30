@@ -23,7 +23,7 @@ Components:
 - Feedback evaluation with numerical ratings for user satisfaction.
 - Guided conversation to help users efficiently.
 
-![new_bytelogo](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/816ef2ff-ef3e-4d32-84ec-18039c315567)
+![image](https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/82be0c83-4868-4c35-b79a-3a4efa9bf5bd)
 
 ## Deployment
 ### Creating a Blob Storage Account: 
