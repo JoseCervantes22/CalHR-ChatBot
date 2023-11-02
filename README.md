@@ -116,7 +116,7 @@ When you are prepared to generate the index, utilize a search client capable of 
    - Resource group: Select your resource group.
    - Location: Choose the geographic region where you want to host the resource.
    - Name: Enter a unique name for your Azure Open AI.
-   - Pricing tier: Select Standerd S0.
+   - Pricing tier: Select Standard S0.
 6. In the next step, select all networks, including the internet, can access this resource.
 7. Finally, review and submit.
 
