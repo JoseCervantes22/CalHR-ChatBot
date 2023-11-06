@@ -75,7 +75,7 @@ When you are prepared to generate the index, utilize a search client capable of 
 <img src="https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/4e7ea01f-a370-428b-8251-0a61e6616220" alt="" style="width:400px;height:350px;">
 
 
-4. Select import data:
+4. Save and navigate to Azure Cognitive Search Services and select import data:
 
    <img src="https://github.com/JoseCervantes22/CalHR-ChatBot/assets/133288667/5ab8ed3e-1fca-4da6-956d-816171aca3ca" alt="" width="380" height="100">
 
