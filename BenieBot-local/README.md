@@ -40,4 +40,4 @@ Implementation code for wordpress, copy and paste in the body section:
 </body>
 <script src="index.js">
 </script>
-\```
+```
