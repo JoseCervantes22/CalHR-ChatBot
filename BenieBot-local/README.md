@@ -1,6 +1,6 @@
 # BenieBot-Wordpress
 Implementation code for wordpress, copy and paste in the body section:
-```html
+```
 <body>
 <link rel="stylesheet" href="style.css"> 
 <div class="disclaimer" style="display: none;">
